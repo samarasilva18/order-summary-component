@@ -59,7 +59,8 @@ I learned about using images as backgrounds in this project! It was interesting 
 ```css
 body {  
   background-image: url(images/pattern-background-mobile.svg);
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 ```
 

@@ -1,0 +1,200 @@
+:root{
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-gray: hsl(224, 23%, 55%);
+    --color-pale-gray: hsl(225, 100%, 98%);
+    --color-dark-blue: hsl(223, 47%, 23%);
+    --color-blue: hsl(245, 75%, 52%);
+    --color-light-blue: hsl(245, 75%, 52%, 0.5);
+}
+
+body {
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--color-light-gray);
+}
+
+main {
+    background-color: var(--color-white);
+    border-radius: 1.1rem;
+    max-width: 20.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img {
+    max-width: 20.5rem;
+    border-radius: 1.1rem 1.1rem 0 0;
+}
+
+main h1 {
+    color: var(--color-dark-blue);
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+main p {
+    text-align: center;
+    margin-top: 0;
+    max-width: 17rem;
+    line-height: 1.5rem;
+}
+
+
+main .annual-plan {
+    display: flex;
+    background-color: var(--color-pale-gray) ;
+    width: 85%;
+    border-radius: 0.8rem;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: 0.8rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
+main .annual-plan img {
+    max-height: 3rem;
+}
+
+main .price-container {
+    font-size: 0.9rem;
+    margin-right: 1.5rem;
+}
+
+main .price-container h2 {
+    font-weight: 900;
+    font-size: 0.9rem;
+    color: var(--color-dark-blue);
+    margin-bottom: 0;
+}
+
+main .annual-plan .smallBtn {
+    text-decoration: underline;
+    color: var(--color-blue);
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-right: 0.5rem;
+}
+
+main .annual-plan .smallBtn:hover{
+    text-decoration: none;
+    color: var(--color-light-blue);
+    cursor: pointer;
+}
+
+main button { 
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: none;
+    display: inline-block;
+    border-radius: 0.6rem;
+    padding: 0.9rem;
+    width: 85%;
+}
+
+main .paymentBtn {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    box-shadow: 0 1.2rem 0.8rem hsl(245, 75%, 52%, 0.15);
+}
+
+main .paymentBtn:hover {
+    cursor: pointer;
+    background-color: var(--color-light-blue);
+}
+
+main .orderBtn { 
+    background-color: transparent;
+    margin-bottom: 0.7rem;
+    margin-top: 1rem;
+    color: var(--color-light-gray);
+}
+
+main .orderBtn:hover {
+    color: var(--color-dark-blue);
+    cursor: pointer;
+}
+
+.attribution {
+    margin-top: 1rem;
+}
+
+@media (min-width: 392px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg); 
+     }
+}
+
+@media (min-width: 477px) {
+    body {
+       background-image: url(images/pattern-background-desktop.svg); 
+    }
+
+    main {
+        max-width: 100%;
+        width: 28rem;
+        height: 43.5rem;
+        box-shadow: 0 1.5rem 0.8rem hsl(245, 75%, 52%, 0.06);
+    }
+
+    main img {
+        max-width: 100%;
+        max-width: 28rem;
+    }
+
+    main h1 {
+        font-size: 1.75rem;
+        margin-top: 2.8rem;
+    }
+    
+    main p {
+        max-width: 21rem;
+        line-height: 1.6rem;
+        font-size: 1.04rem;
+        margin-bottom: 0;
+    }
+
+    main .annual-plan {
+        margin: 1rem;
+        max-width: 21.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    main .price-container {
+        margin-right: 4rem;
+    }
+
+    main .annual-plan img {
+        margin-left: 0.5rem;
+        margin-top: 0.6rem;
+    }
+
+    main .price-container h2 {
+        font-size: 1.05rem;
+        margin-bottom: 0.2rem;
+    }
+
+    main button {
+        width: 79%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 0.95rem;
+    }
+}

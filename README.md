@@ -57,11 +57,9 @@ Users should be able to:
 I learned about using images as backgrounds in this project! It was interesting trying to figure that out, I had no idea what to do at first but fiddled until I found something that worked somewhat nicely. I'm not sure if it matches the design exactly, but I figured it looked close enough!
 
 ```css
-.proud-of-this-css {
-  body {  
-    background-image: url(images/pattern-background-mobile.svg);
-    background-repeat: no-repeat; 
-  }
+body {  
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat; 
 }
 ```
 

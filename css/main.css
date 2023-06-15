@@ -136,13 +136,14 @@ main .orderBtn:hover {
 
 @media (min-width: 392px) {
     body {
-        background-image: url(images/pattern-background-desktop.svg); 
+        background-image: url(images/pattern-background-desktop.svg);
      }
 }
 
 @media (min-width: 477px) {
     body {
-       background-image: url(images/pattern-background-desktop.svg); 
+       background-image: url(images/pattern-background-desktop.svg);
+       margin: 0;
     }
 
     main {
@@ -196,5 +197,11 @@ main .orderBtn:hover {
         padding-top: 1rem;
         padding-bottom: 1rem;
         font-size: 0.95rem;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 0.5rem;
     }
 }
